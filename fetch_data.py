@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 
 # Predefine the list of game IDs you want to track
-game_ids = ["1081688", "1081687", "1081686"]  # Add more game IDs as needed
+game_ids = ["1081688", "1081687", "1081696"]  # Add more game IDs as needed
 
 def fetch_live_boxscore(sport, api_key, game_id):
     """Fetch live boxscore data for a specific game using the provided API key."""
@@ -41,13 +41,23 @@ def parse_game_data(xml_data, game_ids):
         # Look for each specific game data in the XML response
         boxscore = root.find(f".//boxscores/boxscore_{game_id}")
         if boxscore is not None:
-            title = f"Game {game_id}: {boxscore.find('Visitor').text} {boxscore.find('ScoreVis').text} vs {boxscore.find('Home').text} {boxscore.find('ScoreHome').text} | Top Players: "
-            link = boxscore.find('URL').text
-            description = f"Game Summary: {boxscore.find('BoxscoreHeader').text}"
+            visitor_team = boxscore.find('Visitor').text
+            home_team = boxscore.find('Home').text
+            score_visitor = boxscore.find('ScoreVis').text
+            score_home = boxscore.find('ScoreHome').text
+            top_players = boxscore.find('BoxscoreText').text if boxscore.find('BoxscoreText') is not None else None
+            game_url = boxscore.find('URL').text
+            game_summary = f"{visitor_team} {score_visitor} vs {home_team} {score_home}"
+
+            # If no top players info (game hasn't started), show the start time or "Not Started Yet"
+            if not top_players:
+                description = f"Game Summary: {game_summary} - Game has not started yet."
+            else:
+                description = f"Game Summary: {game_summary} | Top Players: {top_players}"
 
             items.append({
-                "title": title,
-                "link": link,
+                "title": f"{visitor_team} vs {home_team}",  # Title without game ID
+                "link": game_url,
                 "description": description,
                 "pubDate": datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
             })
