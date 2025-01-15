@@ -5,6 +5,7 @@
 !nba_feed.xml
 !mbb_feed.xml
 !nba_live_feed.xml
+!rss_feed.xml
 
 # Ignore Python cache and virtual environment files
 __pycache__/
