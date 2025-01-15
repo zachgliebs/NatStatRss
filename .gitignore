@@ -4,6 +4,7 @@
 # Exclude specific RSS feed files
 !nba_feed.xml
 !mbb_feed.xml
+!nba_live_feed.xmls
 
 # Ignore Python cache and virtual environment files
 __pycache__/
