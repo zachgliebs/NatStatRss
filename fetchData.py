@@ -7,7 +7,7 @@ API_KEY = '74ba-3a27cd'
 BASE_URL = 'https://api.natstat.com/v1/'
 ENDPOINT = {
     'nba': 'nba/games',
-    'ncaam': 'ncaam/games',
+    'mbb': 'mbb/games',
 }
 
 def fetch_games_data(sport):
@@ -52,7 +52,7 @@ def save_rss_to_file(feed, filename):
         file.write(feed)
 
 if __name__ == '__main__':
-    sports = ['nba', 'ncaam']
+    sports = ['nba', 'mbb']
     for sport in sports:
         data = fetch_games_data(sport)
         if data:
