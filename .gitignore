@@ -1,0 +1,11 @@
+# Ignore all XML files
+*.xml
+
+# Exclude specific RSS feed files
+!nba_feed.xml
+!ncaam_feed.xml
+
+# Ignore Python cache and virtual environment files
+__pycache__/
+*.pyc
+.env
