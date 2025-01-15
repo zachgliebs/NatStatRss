@@ -4,48 +4,27 @@
         <title>NBA Live Scores</title>
         <link>https://api.natstat.com/v2/boxscores/NBA/</link>
         <description>Live updates for NBA games.</description>
-        <lastBuildDate>Wed, 15 Jan 2025 20:49:45 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jan 2025 20:59:44 +0000</lastBuildDate>
 
         <item>
             <title>NBA Live Scores</title>
             <link>https://api.natstat.com/v2/boxscores/NBA/</link>
             <description>Live updates for NBA games.</description>
-            <pubDate>Wed, 15 Jan 2025 20:49:43 +0000</pubDate>
-        </item>
-
-        <item>
-            <title>Game 1081688: Brooklyn Nets 132 vs Portland Trail Blazers 114 | Top Players: </title>
-            <link>https://natstat.com/nba/game/20250114-brkpor-1</link>
-            <description>Game Summary: Nets 132, Trail Blazers 114</description>
-            <pubDate>Wed, 15 Jan 2025 20:49:43 +0000</pubDate>
+            <pubDate>Wed, 15 Jan 2025 20:59:44 +0000</pubDate>
         </item>
 
         <item>
             <title>NBA Live Scores</title>
             <link>https://api.natstat.com/v2/boxscores/NBA/</link>
             <description>Live updates for NBA games.</description>
-            <pubDate>Wed, 15 Jan 2025 20:49:44 +0000</pubDate>
-        </item>
-
-        <item>
-            <title>Game 1081688: Brooklyn Nets 132 vs Portland Trail Blazers 114 | Top Players: </title>
-            <link>https://natstat.com/nba/game/20250114-brkpor-1</link>
-            <description>Game Summary: Nets 132, Trail Blazers 114</description>
-            <pubDate>Wed, 15 Jan 2025 20:49:44 +0000</pubDate>
+            <pubDate>Wed, 15 Jan 2025 20:59:44 +0000</pubDate>
         </item>
 
         <item>
             <title>NBA Live Scores</title>
             <link>https://api.natstat.com/v2/boxscores/NBA/</link>
             <description>Live updates for NBA games.</description>
-            <pubDate>Wed, 15 Jan 2025 20:49:45 +0000</pubDate>
-        </item>
-
-        <item>
-            <title>Game 1081688: Brooklyn Nets 132 vs Portland Trail Blazers 114 | Top Players: </title>
-            <link>https://natstat.com/nba/game/20250114-brkpor-1</link>
-            <description>Game Summary: Nets 132, Trail Blazers 114</description>
-            <pubDate>Wed, 15 Jan 2025 20:49:45 +0000</pubDate>
+            <pubDate>Wed, 15 Jan 2025 20:59:44 +0000</pubDate>
         </item>
 
     </channel>
