@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 
 # Predefine the list of game IDs you want to track
-game_ids = ["1081688", "1081689", "1081690"]  # Add more game IDs as needed
+game_ids = ["1081688", "1081687", "1081686"]  # Add more game IDs as needed
 
 def fetch_live_boxscore(sport, api_key, game_id):
     """Fetch live boxscore data for a specific game using the provided API key."""
@@ -98,8 +98,11 @@ def main():
     # Generate the RSS feed with the items
     rss_feed = generate_rss_feed(all_items)
 
-    # Print the RSS feed to check the output (or write it to a file)
-    print(rss_feed)
+    # Write the RSS feed to a file
+    with open("rss_feed.xml", "w") as file:
+        file.write(rss_feed)
+
+    print("RSS feed generated and saved to 'rss_feed.xml'.")
 
 if __name__ == "__main__":
     main()
